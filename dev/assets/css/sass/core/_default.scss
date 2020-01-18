@@ -1,0 +1,165 @@
+body{
+	font-family: 'Open Sans', sans-serif;
+	overflow-x: hidden;
+}
+
+h1,h2,h3,h4,h5,h6{
+	font-family: 'Montserrat', sans-serif;
+}
+
+h2{
+	font-size: 2rem;
+
+	@include medium{
+		font-size: 1.5rem;
+	}
+}
+h3{
+	font-size: 1.75rem;
+	@include medium{
+		font-size: 1.2rem;
+	}
+}
+
+
+
+img{
+	max-width: 100%;
+}
+
+ul{
+	margin: 0;
+	padding: 0;
+}
+
+
+a.black_button_w_border{
+	text-decoration: none;
+	background: none;
+	color:$white;
+	padding:5px;
+	font-size: 16px;
+	position: relative;
+	display: inline-block;
+	border:2px solid $black;
+	transition: all .3s ease;
+
+	span{
+		display: block;
+		padding:10px 35px;
+		background-color:$black;
+	}
+
+	&:hover{
+		span{
+			background: #555;
+
+		}
+	}
+
+}
+
+a.white_button_w_border{
+	text-decoration: none;
+	background: none;
+	color:$black;
+	padding:5px;
+	font-size: 16px;
+	position: relative;
+	display: inline-block;
+	border:2px solid $white;
+	transition: all .3s ease;
+
+	span{
+		display: block;
+		padding:10px 35px;
+		background-color:$white;
+
+		@include large{
+			padding:10px 25px;
+		}
+	}
+
+	&:hover{
+		span{
+			background: #ddd;
+
+		}
+	}
+
+}
+
+
+a.red_button_w_border{
+	text-decoration: none;
+	background: none;
+	color:$white;
+	padding:5px;
+	font-size: 16px;
+	position: relative;
+	display: inline-block;
+	border:2px solid $mainRed;
+	transition: all .3s ease;
+
+	span{
+		display: block;
+		padding:10px 35px;
+		background-color:$mainRed;
+	}
+
+	&:hover{
+		span{
+			background: #963126;
+
+		}
+	}
+
+}
+
+.area_title_red{
+	color:$mainRed;
+	font-weight: 700;
+}
+
+.area_subtitle{
+	font-size: 1.75rem;
+	font-weight: 300;
+	margin-bottom: 1.8rem;
+
+	@include extraSmall{
+		font-size: 1.3rem;
+	}
+}
+
+i{
+	font-style: normal;
+}
+
+.red{
+	color:$mainRed;
+}
+
+.page_title{
+	font-weight: 700;
+}
+
+.thin{
+	font-weight: 300;
+}
+
+
+//Buttons
+.red_white_button{
+	background: $mainRed;
+	color:$white;
+	border:none;
+	padding:8px 15px;
+	border-radius: 3px;
+	border:1px solid $mainRed;
+	transition:all .3s ease;
+
+	&:hover{
+		color:$mainRed;
+		background:$white;
+	}
+}

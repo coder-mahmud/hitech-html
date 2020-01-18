@@ -1,0 +1,78 @@
+.send_case_heading{
+	text-align: center;
+	padding:50px 0;
+	.title{
+		color:$mainRed;
+		font-weight: 700;
+	}
+
+	p{
+		font-weight: 300;
+		span{
+			color:$mainRed;
+			font-weight: 400;
+		}
+	}
+}
+
+
+.send_case_content{
+	.tab{
+		border:none;
+		ul{
+			background:none;
+			border:none;
+			margin-bottom: 50px;
+			display:flex;
+			justify-content: center;
+			li{
+				border:none;
+				margin:0 45px;
+
+				&.ui-state-active{
+					background: none;
+					border:none;
+
+					a{
+						outline:none;
+					}
+				}
+
+				.black_button_w_border{
+					font-size: 70px;
+					padding:5px;
+					font-weight: 700;
+					font-family: 'Montserrat', sans-serif;
+					color:#fff;
+
+					span{
+						padding:10px 28px;
+					}
+				}
+
+				&.ui-state-active{
+					.black_button_w_border{
+						border:2px solid $mainRed;
+
+						span{
+							background: $mainRed;
+						}
+					}	
+				}
+			}
+		}
+
+
+	}
+
+
+	.tab_content_container{
+		border:2px solid $mainRed;
+		padding:8px;
+
+		.tab_content{
+			background: $mainRed;
+			color:$white;
+		}
+	}
+}

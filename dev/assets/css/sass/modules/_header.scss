@@ -1,0 +1,192 @@
+.header_top{
+	position: relative;
+
+	.logo{
+		display: block;
+		padding:20px 0;
+		width: 100%;
+		text-align: center;
+
+		@include small{
+			width: 70%;
+		}
+		img{
+			max-width: 350px;
+		}
+	}
+
+	.mobile_menu_opener{
+		position: absolute;
+		right: 0px;
+		top: 20px;
+		cursor: pointer;
+		display: none;
+
+		@include medium{
+			display: block;
+		}
+		@include small{
+			top: 30px;
+			right: 25px;
+		}
+		img{
+			max-width: 60px;
+
+			@include small{
+				max-width: 40px;
+			}
+		}
+	}
+
+
+}
+
+
+.main_menu_area{
+	background: #000;
+	color:#fff;
+	text-align: center;
+
+	@include medium{
+		display: none;
+	}
+
+	ul.main_menu{
+		text-align: center;
+		margin:0;
+		li{
+			list-style: none;
+			float: none;
+			display: inline-block;
+			position: relative;
+
+			a{
+				color:#fff;
+				text-decoration: none;
+				margin: 0 10px;
+				padding:22px 35px;
+				padding-left: 0;
+				padding-right: 70px;
+				font-size: 18px;
+				font-weight: 700;
+				display: block;
+
+				@include large{
+					padding:22px 10px;
+				}
+
+				&:hover{
+					color:$mainRed;
+				}
+			}
+
+			ul{
+				position: absolute;
+				top: 80px;
+				left: 0;
+				width: 100%;
+				min-width: 200px;
+				background: $black;
+				padding: 10px 0;
+				opacity: 0;
+				transition: all .3s ease;
+
+
+				a{
+					padding: 10px 0;
+					text-align: left;
+					font-size: 16px;
+				}
+
+				li{
+					float: left;
+					display: block;
+					width: 100%;
+				}
+
+				&.visible{
+					z-index: 9;
+				}
+			}
+
+			&:hover ul{
+				top: 70px;
+				opacity: 1;
+				z-index: 9;
+			}
+
+			&:last-child{
+				a{
+					padding-right: 0;
+				}
+			}
+		}
+	}
+}
+
+
+.mobile_menu{
+	position: absolute;
+	top: 0;
+	width: 100%;
+	min-height: 100vh;
+	background: #000;
+	z-index: 9;
+	padding-top: 50px;
+	opacity: 0;
+	visibility: hidden;
+	right: 100%;
+	transition: all 0.3s ease;
+
+	&.visible{
+		right: 0%;
+		opacity: 1;
+		visibility: visible;
+	}
+
+	.closer{
+		position: absolute;
+		right: 45px;
+		top: 25px;
+		cursor: pointer;
+		z-index: 9999;
+		i{
+			font-style: normal;
+			font-size: 45px;
+			color:#fff;
+		}
+	}
+
+
+	ul{
+		li{
+			position: relative;
+
+			span{
+				position: absolute;
+				right: 10px;
+				top: 5px;
+
+				i{
+					color:$white;
+				}
+			}
+			a{
+				color:#fff;
+				padding:15px 0;
+				display: block;
+				text-decoration: none;
+			}
+
+			ul{
+				display: none;
+				padding-left: 30px;
+				li{
+					a{
+
+					}
+				}
+			}
+		}
+	}
+}

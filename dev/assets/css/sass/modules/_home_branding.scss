@@ -1,0 +1,30 @@
+.branding{
+	padding:70px 0;
+	background: $mainRed;
+	color:$white;
+	text-align: center;
+
+	h3{
+		font-weight: 700;
+		font-size: 1.75rem;
+		max-width: 920px;
+		margin:25px 0;
+
+		@include medium{
+			font-size: 1.5rem;
+		}
+		@include extraSmall{
+			font-weight: 400;
+			font-size: 1.3rem;
+		}
+	}
+
+	p{
+		font-weight: 300;
+	}
+
+	a{
+		display: inline-block;
+		margin-top: 25px;
+	}
+}

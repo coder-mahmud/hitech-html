@@ -1,0 +1,111 @@
+.case_scheduler{
+    padding:70px 0;
+}
+
+#calendar-container{
+    padding: 10px;
+
+    text-align: center;
+    border-radius: 10px;
+    font-size: 16px;
+    font-family: Arial;
+    display: none;
+    overflow: hidden;
+}
+
+#calendar-container>div{
+    padding: 0;
+    margin-bottom: 10px;
+}
+
+#calendar-month-year{
+    margin: 5px;
+}
+
+#calendar-dates>table>tr>td{
+    padding: 5px;
+}
+
+
+/* Date picker */
+.ui-datepicker-calendar{
+	background: #000;
+}
+
+#calendar-container.show{
+    display: block;
+}
+
+td.active{
+    background: #a9d1fe;
+    color:#fff;
+}
+
+td.active.offday{
+    background: #fcd17d;
+    color:#fff;
+}
+td.active.delivery{
+    background: #d7d8a2;
+    color:#fff;
+}
+td.active.expected{
+    background: #c0feba;
+    color:#fff;
+}
+
+.single_calendar{
+    display: inline-block;
+    float: left;
+    margin-right: 35px;
+
+    td{
+        padding: 5px;
+    }
+}
+
+.ship_day {
+    background-color: #d7d8a2;
+    text-align: center;
+}
+
+.pre_proc_day {
+    background-color: #fe9794;
+    text-align: center;
+}
+
+.proc_day {
+    background-color: #a9d1fe;
+    text-align: center;
+}
+
+.holiday {
+    background-color: #fcd17d;
+    text-align: center;
+}
+
+.deliv_day {
+    background-color: #c0feba;
+    text-align: center;
+}
+
+.date_indicator{
+    td{
+        text-align: left;
+    }
+}
+
+
+.loader{
+    text-align: center;
+    padding:50px 0;
+    display: none;
+    i{
+        display: inline-block;
+        font-size: 50px;
+    }
+
+    &.visible{
+        display: block;
+    }
+}

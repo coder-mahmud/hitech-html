@@ -1,0 +1,22 @@
+.get_started{
+	padding:70px 0;
+	color:$black;
+	text-align: center;
+
+
+	.content{
+		border:2px solid $black;
+		padding:7px;
+
+		.text_content{
+			background: $black;
+			color:$white;
+			padding:25px 15px;
+		}
+	}
+
+	a{
+		display: inline-block;
+		margin-top: 1.8rem;
+	}
+}

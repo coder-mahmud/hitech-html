@@ -1,0 +1,282 @@
+<!doctype html>
+<html class="no-js" lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>HiTech Dental</title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="assets/css/vendors.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,700|Open+Sans:300,400,700&display=swap" rel="stylesheet">
+  <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+  <link rel="stylesheet" href="assets/css/styles.css">
+
+</head>
+
+
+<body>
+  <!--[if IE]>
+    <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
+  <![endif]-->
+
+  
+    <section class="header_top">
+
+        <div class="container">
+            <div class="row">
+
+                <div class="col-12">
+                    <a class="logo" href="#"><img src="assets/img/logo.svg" alt=""></a>
+                    <div class="mobile_menu_opener">
+                        <img class="" src="assets/img/menu_button.png" alt="">
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+        
+    </section>
+
+    <section class="main_menu_area">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <ul class="main_menu">
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Products</a>
+                            <ul>
+                                <li><a href="#">Item One</a></li>
+                                <li><a href="#">Item Two</a></li>
+                                <li><a href="#">Item Three</a></li>
+                                <li><a href="#">Item Four</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">Send a Case</a></li>
+                        <li><a href="#">Resources</a></li>
+                        <li><a href="#">Contact Us</a></li>
+                    </ul>   
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="mobile_menu">
+        <div class="container">
+            <div class="closer"><i class="fas fa-times"></i></div>
+            <div class="row">
+                <div class="col-12">
+                    <ul class="">
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Products</a><span><i class="fas fa-chevron-down"></i></span>
+                            <ul>
+                                <li><a href="#">Item One</a></li>
+                                <li><a href="#">Item Two</a></li>
+                                <li><a href="#">Item Three</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">Send a Case</a></li>
+                        <li><a href="#">Resources</a></li>
+                        <li><a href="#">Contact Us</a></li>
+                    </ul>   
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="case_scheduler">
+        <div class="container">
+            <div class="row">
+
+                <div class="col-12">
+                    <h1 class="page_title red">Case Scheduler</h1>
+                    <p class="thin">Apex is committed to providing high-quality restorations that are always on-time, which is why we have an on-time guarantee. Never worry that a late case is going to leave a patient frustrated in your chair with our case scheduler. Simply provide your case's information and find out when to expect it back at your practice.</p>
+                </div>
+
+                <div class="col-12">
+
+                    <form autocomplete="off" class=" case_scheduler_form">
+                        <div class="form-row">
+                            <div class="form-group col-12">
+                                <input type="text" class="form-control" id="datepicker" placeholder="Select a Ship Date" >
+                            </div>
+
+                        </div>
+
+                        <div class="form-row">
+                            <div class="form-group col-12">
+                                <select class="product_name form-control" name="product_name" class="form-control"  id="">
+                                    <option value=""  disabled="" selected="">Select a Product</option>
+                                    <option value="8">Crystal Anterior</option>                 
+                                    <option value="8">Crystal Elite (Full Contour)</option>                   
+                                    <option value="10">Crystal Elite/Layered Zirconia</option>
+                                    <option value="10">Crystal Elite/Cutback</option>       
+                                    <option value="8">Emax Complete</option>
+                                    <option value="10">Emax Layered</option>
+                                    <option value="8">Crystal Ultra</option>
+                                    <option value="10">PFM</option>
+                                    <option value="8">Full Cast</option>
+                                    <option value="8">PMMA</option>
+                                    <option value="8">Digital Models</option>
+                                    <option value="8">Diagnostic Wax Ups</option>
+                                    <option value="12">Implant Systems</option>
+                                </select>
+                            </div>   
+                        </div>
+
+                        <button type="submit" class="red_white_button">Get Turnaround Time</button>
+                    </form>
+
+                </div>
+
+                <div class="col-12 loader">
+                    <i class="fas fa-spinner fa-pulse"></i>
+                </div>
+
+                <div class="col-12">
+                    <div id="calendar-container">
+
+                        <div class="single_calendar">
+                            <div id="calendar-header">
+                                <span id="calendar-month-year"></span>
+                            </div>
+                            <div class="calendar_holder" id="calendar-dates">
+                            </div>                            
+                        </div>
+
+
+                        <div class="single_calendar">
+                            <div id="calendar-header">
+                                <span id="calendar-month-year2"></span>
+                            </div>
+                            <div class="calendar_holder" id="calendar-dates2">
+                            </div>
+                        </div>
+
+                        <div class="single_calendar date_indicator">
+                            <div class="cal_key">
+                                <table style="margin-left:15px;margin:auto">
+                                    <tbody>
+
+                                        <tr>
+                                            <td class="ship_day">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+                                            <td><span style="color:#000">= Shipping Day</span></td>
+                                        </tr>
+
+                                        <tr>
+                                            <td class="pre_proc_day">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+                                            <td><span style="color:#000">= Processing Day</span></td>
+                                        </tr>
+
+                                        <tr>
+                                            <td class="proc_day">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+                                            <td class="processing_days" style="color: #000;">= <u><span style="color:#000">In-Lab:</span></u> </td>
+                                        </tr>
+
+                                        <tr>
+                                            <td class="holiday">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+                                            <td style="color:#000"><span>= Holiday </span></td>
+                                        </tr>
+
+                                        <tr>
+                                            <td class="deliv_day">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+                                            <td><span style="color:#000">= Est. Delivery Day </span></td>
+                                        </tr>
+
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                
+                
+                
+
+
+              
+
+
+
+            </div>
+        </div>
+    </section>
+
+
+    <section class="footer_top">
+        <div class="container">
+            <div class="row">
+
+                <div class="col-md-4 col-sm-4 footer_menu_column">
+                    <h5 class="column_title">Send a Case</h5>
+                    <ul>
+                        <li><a href="#">New Doctor</a></li>
+                        <li><a href="#">Rx Form</a></li>
+                        <li><a href="#">Local Pickup</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-md-4 col-sm-4 footer_menu_column">
+                    <h5 class="column_title">Send a Case</h5>
+                    <ul>
+                        <li><a href="#">New Doctor</a></li>
+                        <li><a href="#">Rx Form</a></li>
+                        <li><a href="#">Local Pickup</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-md-4 col-sm-4 footer_menu_column">
+                    <h5 class="column_title">Send a Case</h5>
+                    <ul>
+                        <li><a href="#">New Doctor</a></li>
+                        <li><a href="#">Rx Form</a></li>
+                        <li><a href="#">Local Pickup</a></li>
+                    </ul>
+                </div>
+
+
+            </div>
+        </div>
+    </section>
+
+
+    <section class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-5 footer_col my-auto">
+                    <p class="copyright">Copyright © 2020 - <span>All Rights Reserved</span></p>
+                </div>
+
+                <div class="col-md-2 footer_col my-auto">
+                    <img class="logo_icon" src="assets//img/tooth-solid.svg" alt="">
+                </div>
+                <div class="col-md-5 footer_col my-auto">
+                    <span class="designed_by">Designed By</span>
+                    <img class="service_provider" src="assets/img/company.png" alt="">
+                </div>                
+            </div>
+        </div>
+    </section>
+
+
+
+  
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js"   
+  integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="  crossorigin="anonymous"></script>
+
+
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+
+  <script src="assets/js/vendors.js"></script>
+  <script src="assets/js/app.js"></script>
+
+
+
+
+</body>
+
+</html>
